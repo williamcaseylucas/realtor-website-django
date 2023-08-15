@@ -1,4 +1,6 @@
-#!/mnt/c/Users/willi/Desktop/github/realestate_app/btre_resources/btre_project/venv/bin/python
+#!/bin/sh
+'''exec' "/home/william/Desktop/Public Projects/realtor-website-django/btre_project/venv/bin/python" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys
