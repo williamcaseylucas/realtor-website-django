@@ -1,0 +1,7 @@
+# Installs
+pip install django
+
+# Commands
+django-admin startproject btre . # Creates new project called btre in current folder
+python manage.py startapp pages # Creates new pages folder
+python manage.py runserver # runs the server
