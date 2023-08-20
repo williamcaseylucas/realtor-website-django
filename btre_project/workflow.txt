@@ -1,0 +1,10 @@
+Add for theme: 
+* dirs in templates
+* STATIC_ROOT should be defined for digital ocean deployment
+* Also add STATICFILES_DIRS = [] where you define where static files folder is (normally is build folder for react)
+
+Add this to .gitignore:
+/static
+/media
+
+When we deploy the main root static folder is what is looked at

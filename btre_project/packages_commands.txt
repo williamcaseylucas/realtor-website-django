@@ -5,3 +5,10 @@ pip install django
 django-admin startproject btre . # Creates new project called btre in current folder
 python manage.py startapp pages # Creates new pages folder
 python manage.py runserver # runs the server
+
+# To collect static files
+python manage.py collectstatic
+
+# Creating the other apps
+python manage.py startapp listings
+python manage.py startapp realtors
