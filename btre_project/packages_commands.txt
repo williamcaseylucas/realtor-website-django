@@ -12,3 +12,18 @@ python manage.py collectstatic
 # Creating the other apps
 python manage.py startapp listings
 python manage.py startapp realtors
+
+
+# How to run docker-compose -> 
+    docker-compose up --build
+    admin@admin.com
+    root
+
+# To use docker container with db
+# make new terminal and say:
+- docker container ls (make sure it is running)
+- docker inspect <id>
+    - Grab ip address
+    - put in new server and change username and password to root
+
+# Postgres is on 5432 normally, we will access on port 5050

@@ -8,3 +8,6 @@ Add this to .gitignore:
 /media
 
 When we deploy the main root static folder is what is looked at
+
+Django -> has its own ORM like Postgres!
+Install pg admin for visualizing postgres
