@@ -25,5 +25,15 @@ python manage.py startapp realtors
 - docker inspect <id>
     - Grab ip address
     - put in new server and change username and password to root
+    - username and password is root and name will be dbserver
+- pip freeze > requirements.txt
 
 # Postgres is on 5432 normally, we will access on port 5050
+
+# Install
+pip install psycopg2
+pip install psycopg2-binary
+
+# Run migrations 
+python manage.py makemigrations
+python manage.py migrate

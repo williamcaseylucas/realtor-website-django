@@ -11,3 +11,14 @@ When we deploy the main root static folder is what is looked at
 
 Django -> has its own ORM like Postgres!
 Install pg admin for visualizing postgres
+
+# Change db
+ENGINE: backends.postgresql
+NAME: btredb (name we gave db)
+USER: 'root'
+PASSWORD: 'root'
+HOST: 'localhost'
+PORT: 5432
+
+- After python manage.py migrate
+ -> Check btre_db -> schemas, public, tables, 

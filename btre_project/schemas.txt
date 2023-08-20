@@ -1,0 +1,9 @@
+MODEL/DB FIELDS
+
+### LISTING
+id: INT
+realtro INT (FOREIGN KEY [realtor])
+
+### REALTOR
+
+### CONTACT

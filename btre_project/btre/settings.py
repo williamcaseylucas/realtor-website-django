@@ -78,10 +78,20 @@ WSGI_APPLICATION = "btre.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+# }
+
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "btre_db",
+        "USER": "root",
+        "PASSWORD": "root",
+        "HOST": "localhost",
+        # "HOST": "postgres_container",
+        "PORT": "5432",
     }
 }
 
