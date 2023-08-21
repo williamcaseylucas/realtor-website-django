@@ -1,9 +1,13 @@
 from django.shortcuts import render
 
+from .models import Listing
+
 
 # These work because we configured the template directory
 def index(request):
-    return render(request, "listings/listings.html")
+    listings = Listing.objects.all()
+    context = {"listings": listings}
+    return render(request, "listings/listings.html", context)
 
 
 def listing(request, listing_id):
