@@ -22,3 +22,22 @@ PORT: 5432
 
 - After python manage.py migrate
  -> Check btre_db -> schemas, public, tables, 
+
+
+# ADMIN PAGE
+username: wrunyon3
+password: root
+
+# User -> Staff status is admin 
+
+
+# How to access media folder settings
+MEDIA_ROOT = (in settings.py)
+Add static() addition to base urls in (urls.py)
+
+# Customize admin area 
+- By having a str method, we were able to have proper displays in our admin page
+- Add admin page to templates 
+- Go to btre -> static -> css -> add admin.css for additional styling
+- Inspect element directly in css styles and see exact classes that are manipulating them
+- Change .default off for flipped functionality
